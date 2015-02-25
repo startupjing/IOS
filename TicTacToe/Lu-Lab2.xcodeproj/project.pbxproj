@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68B89AC81A99168100E6C9F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B89AC71A99168100E6C9F3 /* main.m */; };
+		68B89ACB1A99168100E6C9F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B89ACA1A99168100E6C9F3 /* AppDelegate.m */; };
+		68B89ACE1A99168100E6C9F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B89ACD1A99168100E6C9F3 /* ViewController.m */; };
+		68B89AD11A99168100E6C9F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B89ACF1A99168100E6C9F3 /* Main.storyboard */; };
+		68B89AD31A99168100E6C9F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B89AD21A99168100E6C9F3 /* Images.xcassets */; };
+		68B89AD61A99168100E6C9F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B89AD41A99168100E6C9F3 /* LaunchScreen.xib */; };
+		68B89AE21A99168100E6C9F3 /* Lu_Lab2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B89AE11A99168100E6C9F3 /* Lu_Lab2Tests.m */; };
+		68B89AED1A99169600E6C9F3 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B89AEC1A99169600E6C9F3 /* Cell.m */; };
+		68B89AF21A9916C900E6C9F3 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B89AF11A9916C900E6C9F3 /* Board.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68B89ADC1A99168100E6C9F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68B89ABA1A99168100E6C9F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68B89AC11A99168100E6C9F3;
+			remoteInfo = "Lu-Lab2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68B89AC21A99168100E6C9F3 /* Lu-Lab2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lu-Lab2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B89AC61A99168100E6C9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68B89AC71A99168100E6C9F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68B89AC91A99168100E6C9F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68B89ACA1A99168100E6C9F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68B89ACC1A99168100E6C9F3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		68B89ACD1A99168100E6C9F3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68B89AD01A99168100E6C9F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68B89AD21A99168100E6C9F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		68B89AD51A99168100E6C9F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		68B89ADB1A99168100E6C9F3 /* Lu-Lab2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lu-Lab2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B89AE01A99168100E6C9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68B89AE11A99168100E6C9F3 /* Lu_Lab2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lu_Lab2Tests.m; sourceTree = "<group>"; };
+		68B89AEB1A99169600E6C9F3 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cell.h; path = ../Model/Cell.h; sourceTree = "<group>"; };
+		68B89AEC1A99169600E6C9F3 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cell.m; path = ../Model/Cell.m; sourceTree = "<group>"; };
+		68B89AF01A9916C900E6C9F3 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Board.h; path = Model/Board.h; sourceTree = SOURCE_ROOT; };
+		68B89AF11A9916C900E6C9F3 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Board.m; path = Model/Board.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68B89ABF1A99168100E6C9F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B89AD81A99168100E6C9F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68B89AB91A99168100E6C9F3 = {
+			isa = PBXGroup;
+			children = (
+				68B89AC41A99168100E6C9F3 /* Lu-Lab2 */,
+				68B89ADE1A99168100E6C9F3 /* Lu-Lab2Tests */,
+				68B89AC31A99168100E6C9F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68B89AC31A99168100E6C9F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68B89AC21A99168100E6C9F3 /* Lu-Lab2.app */,
+				68B89ADB1A99168100E6C9F3 /* Lu-Lab2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68B89AC41A99168100E6C9F3 /* Lu-Lab2 */ = {
+			isa = PBXGroup;
+			children = (
+				68B89AC91A99168100E6C9F3 /* AppDelegate.h */,
+				68B89ACA1A99168100E6C9F3 /* AppDelegate.m */,
+				68B89ACC1A99168100E6C9F3 /* ViewController.h */,
+				68B89ACD1A99168100E6C9F3 /* ViewController.m */,
+				68B89ACF1A99168100E6C9F3 /* Main.storyboard */,
+				68B89AD21A99168100E6C9F3 /* Images.xcassets */,
+				68B89AEF1A9916B000E6C9F3 /* Model */,
+				68B89AD41A99168100E6C9F3 /* LaunchScreen.xib */,
+				68B89AC51A99168100E6C9F3 /* Supporting Files */,
+			);
+			path = "Lu-Lab2";
+			sourceTree = "<group>";
+		};
+		68B89AC51A99168100E6C9F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68B89AC61A99168100E6C9F3 /* Info.plist */,
+				68B89AC71A99168100E6C9F3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68B89ADE1A99168100E6C9F3 /* Lu-Lab2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				68B89AE11A99168100E6C9F3 /* Lu_Lab2Tests.m */,
+				68B89ADF1A99168100E6C9F3 /* Supporting Files */,
+			);
+			path = "Lu-Lab2Tests";
+			sourceTree = "<group>";
+		};
+		68B89ADF1A99168100E6C9F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68B89AE01A99168100E6C9F3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68B89AEF1A9916B000E6C9F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68B89AEC1A99169600E6C9F3 /* Cell.m */,
+				68B89AEB1A99169600E6C9F3 /* Cell.h */,
+				68B89AF01A9916C900E6C9F3 /* Board.h */,
+				68B89AF11A9916C900E6C9F3 /* Board.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68B89AC11A99168100E6C9F3 /* Lu-Lab2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68B89AE51A99168100E6C9F3 /* Build configuration list for PBXNativeTarget "Lu-Lab2" */;
+			buildPhases = (
+				68B89ABE1A99168100E6C9F3 /* Sources */,
+				68B89ABF1A99168100E6C9F3 /* Frameworks */,
+				68B89AC01A99168100E6C9F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lu-Lab2";
+			productName = "Lu-Lab2";
+			productReference = 68B89AC21A99168100E6C9F3 /* Lu-Lab2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68B89ADA1A99168100E6C9F3 /* Lu-Lab2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68B89AE81A99168100E6C9F3 /* Build configuration list for PBXNativeTarget "Lu-Lab2Tests" */;
+			buildPhases = (
+				68B89AD71A99168100E6C9F3 /* Sources */,
+				68B89AD81A99168100E6C9F3 /* Frameworks */,
+				68B89AD91A99168100E6C9F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68B89ADD1A99168100E6C9F3 /* PBXTargetDependency */,
+			);
+			name = "Lu-Lab2Tests";
+			productName = "Lu-Lab2Tests";
+			productReference = 68B89ADB1A99168100E6C9F3 /* Lu-Lab2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68B89ABA1A99168100E6C9F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = wustl;
+				TargetAttributes = {
+					68B89AC11A99168100E6C9F3 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					68B89ADA1A99168100E6C9F3 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 68B89AC11A99168100E6C9F3;
+					};
+				};
+			};
+			buildConfigurationList = 68B89ABD1A99168100E6C9F3 /* Build configuration list for PBXProject "Lu-Lab2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68B89AB91A99168100E6C9F3;
+			productRefGroup = 68B89AC31A99168100E6C9F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68B89AC11A99168100E6C9F3 /* Lu-Lab2 */,
+				68B89ADA1A99168100E6C9F3 /* Lu-Lab2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68B89AC01A99168100E6C9F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B89AD11A99168100E6C9F3 /* Main.storyboard in Resources */,
+				68B89AD61A99168100E6C9F3 /* LaunchScreen.xib in Resources */,
+				68B89AD31A99168100E6C9F3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B89AD91A99168100E6C9F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68B89ABE1A99168100E6C9F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B89ACE1A99168100E6C9F3 /* ViewController.m in Sources */,
+				68B89AED1A99169600E6C9F3 /* Cell.m in Sources */,
+				68B89ACB1A99168100E6C9F3 /* AppDelegate.m in Sources */,
+				68B89AC81A99168100E6C9F3 /* main.m in Sources */,
+				68B89AF21A9916C900E6C9F3 /* Board.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B89AD71A99168100E6C9F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B89AE21A99168100E6C9F3 /* Lu_Lab2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68B89ADD1A99168100E6C9F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68B89AC11A99168100E6C9F3 /* Lu-Lab2 */;
+			targetProxy = 68B89ADC1A99168100E6C9F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68B89ACF1A99168100E6C9F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68B89AD01A99168100E6C9F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68B89AD41A99168100E6C9F3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68B89AD51A99168100E6C9F3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68B89AE31A99168100E6C9F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68B89AE41A99168100E6C9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68B89AE61A99168100E6C9F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Lu-Lab2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		68B89AE71A99168100E6C9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Lu-Lab2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		68B89AE91A99168100E6C9F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lu-Lab2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lu-Lab2.app/Lu-Lab2";
+			};
+			name = Debug;
+		};
+		68B89AEA1A99168100E6C9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lu-Lab2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lu-Lab2.app/Lu-Lab2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68B89ABD1A99168100E6C9F3 /* Build configuration list for PBXProject "Lu-Lab2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B89AE31A99168100E6C9F3 /* Debug */,
+				68B89AE41A99168100E6C9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68B89AE51A99168100E6C9F3 /* Build configuration list for PBXNativeTarget "Lu-Lab2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B89AE61A99168100E6C9F3 /* Debug */,
+				68B89AE71A99168100E6C9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		68B89AE81A99168100E6C9F3 /* Build configuration list for PBXNativeTarget "Lu-Lab2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B89AE91A99168100E6C9F3 /* Debug */,
+				68B89AEA1A99168100E6C9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68B89ABA1A99168100E6C9F3 /* Project object */;
+}
