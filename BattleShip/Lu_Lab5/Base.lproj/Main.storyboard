@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Score Board-->
+        <scene sceneID="eg4-wm-2jM">
+            <objects>
+                <viewController id="1fG-Ft-g8g" customClass="ScoreBoard" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4qj-vd-duk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dby-Qj-QGl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IHl-oi-YRN">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0F-nC-d8w">
+                                <rect key="frame" x="16" y="28" width="119" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Quit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="9mA-EI-5dQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Best Scores" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jn-5P-H7P">
+                                <rect key="frame" x="356" y="95" width="313" height="125"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xSU-2H-KUH">
+                                <rect key="frame" x="242" y="215" width="81" height="72"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="n6m-DV-hMf">
+                                <rect key="frame" x="242" y="309" width="81" height="72"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no4_5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dBb-f1-NmT">
+                                <rect key="frame" x="242" y="413" width="81" height="72"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no4_5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bgr-ZU-PFw">
+                                <rect key="frame" x="242" y="518" width="81" height="72"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no4_5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gvF-0P-gHk">
+                                <rect key="frame" x="242" y="617" width="81" height="72"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No.1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nC-S2-fKO">
+                                <rect key="frame" x="413" y="227" width="256" height="47"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No.2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0N-eQ-F2b">
+                                <rect key="frame" x="413" y="321" width="256" height="47"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No.4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLS-GJ-CaO">
+                                <rect key="frame" x="413" y="530" width="256" height="47"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESb-1f-HF6">
+                                <rect key="frame" x="413" y="629" width="256" height="47"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No.3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRw-Kl-xnQ">
+                                <rect key="frame" x="413" y="425" width="256" height="47"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="no1" destination="4nC-S2-fKO" id="Bma-5G-nGB"/>
+                        <outlet property="no2" destination="o0N-eQ-F2b" id="pFe-Xb-RYW"/>
+                        <outlet property="no3" destination="pRw-Kl-xnQ" id="D7k-Qj-8to"/>
+                        <outlet property="no4" destination="WLS-GJ-CaO" id="yjv-RQ-u04"/>
+                        <outlet property="no5" destination="ESb-1f-HF6" id="xMT-gg-XEX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgQ-ds-ouz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1926" y="-959"/>
+        </scene>
+        <!--Home Page-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomePage" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BattleShip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYw-XA-tA1">
+                                <rect key="frame" x="412" y="120" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="textColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zs-VC-Q18">
+                                <rect key="frame" x="259" y="315" width="128" height="30"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="SinglePlayer">
+                                    <color key="titleColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2Eg-fZ-3HL" kind="presentation" id="e8P-ZV-V7C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bS-h1-LpR">
+                                <rect key="frame" x="259" y="437" width="128" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="DoublePlayer">
+                                    <color key="titleColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dti-gU-FHL" kind="presentation" id="XRk-h9-ue0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="right_missle.png" translatesAutoresizingMaskIntoConstraints="NO" id="XH2-xl-3cu">
+                                <rect key="frame" x="141" y="315" width="100" height="30"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="left_missle.png" translatesAutoresizingMaskIntoConstraints="NO" id="q30-gy-oks">
+                                <rect key="frame" x="403" y="315" width="100" height="30"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="right_missle.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Np-hc-aGn">
+                                <rect key="frame" x="141" y="437" width="100" height="30"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="left_missle.png" translatesAutoresizingMaskIntoConstraints="NO" id="JvZ-nb-Cot">
+                                <rect key="frame" x="403" y="437" width="100" height="30"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpm-RU-V59">
+                                <rect key="frame" x="259" y="534" width="128" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ScoreBoard">
+                                    <color key="titleColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1fG-Ft-g8g" kind="presentation" id="ADy-83-QDX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-722" y="-333"/>
+        </scene>
+        <!--Double Player-->
+        <scene sceneID="hOr-Ld-BJi">
+            <objects>
+                <viewController id="dti-gU-FHL" customClass="DoublePlayer" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wuq-yb-AHB"/>
+                        <viewControllerLayoutGuide type="bottom" id="3W8-UL-mQN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dFg-yy-aOn">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xde-fw-jA6">
+                                <rect key="frame" x="35" y="86" width="400" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwJ-8U-W6c">
+                                <rect key="frame" x="505" y="97" width="408" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluegrid.png" translatesAutoresizingMaskIntoConstraints="NO" id="hDZ-65-nnh">
+                                <rect key="frame" x="35" y="145" width="400" height="400"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xK4-gZ-Wvz">
+                                <rect key="frame" x="705" y="145" width="200" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCs-zU-gOO">
+                                <rect key="frame" x="785" y="387" width="120" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aK-u3-yy4">
+                                <rect key="frame" x="785" y="306" width="120" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluegrid.png" translatesAutoresizingMaskIntoConstraints="NO" id="F73-5f-YgP">
+                                <rect key="frame" x="505" y="145" width="400" height="400"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xum-jb-X85">
+                                <rect key="frame" x="34" y="145" width="200" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKr-Fh-mRi">
+                                <rect key="frame" x="34" y="464" width="80" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Cm-4x-srt">
+                                <rect key="frame" x="34" y="387" width="120" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3Y-ox-uVF">
+                                <rect key="frame" x="38" y="306" width="120" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current: Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqd-fe-LeL">
+                                <rect key="frame" x="150" y="569" width="641" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88C-IG-8hT">
+                                <rect key="frame" x="745" y="226" width="160" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYR-oE-qe7">
+                                <rect key="frame" x="34" y="226" width="160" height="40"/>
+                                <color key="tintColor" red="0.0078431377190000002" green="0.8078432083" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Double tap to rotate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqD-Cc-O1K">
+                                <rect key="frame" x="38" y="601" width="864" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kT2-Ts-3l7">
+                                <rect key="frame" x="34" y="664" width="128" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Placement done">
+                                    <color key="titleColor" red="0.40000000596046448" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="placementDone:" destination="dti-gU-FHL" eventType="touchUpInside" id="h6g-DX-E5k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXB-1x-ZqH">
+                                <rect key="frame" x="16" y="28" width="186" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Quit">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0078431377190000002" green="0.8078432083" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="KFW-ZI-Ot4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lq-Vu-Tpz">
+                                <rect key="frame" x="825" y="464" width="80" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="right_missle.png" translatesAutoresizingMaskIntoConstraints="NO" id="MUT-Zr-kxM">
+                                <rect key="frame" x="430" y="258" width="80" height="50"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="left_missle.png" translatesAutoresizingMaskIntoConstraints="NO" id="4B7-uw-WHd">
+                                <rect key="frame" x="430" y="359" width="80" height="50"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZw-fW-sZY">
+                                <rect key="frame" x="414" y="664" width="113" height="35"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="I'm done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchTurn:" destination="dti-gU-FHL" eventType="touchUpInside" id="c7n-mm-H1q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yrw-gu-9In"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="current_turn" destination="kqd-fe-LeL" id="qwQ-Ia-Gm6"/>
+                        <outlet property="game_info" destination="CqD-Cc-O1K" id="DWT-OV-nPc"/>
+                        <outlet property="grid_p1" destination="hDZ-65-nnh" id="MXL-wY-eR4"/>
+                        <outlet property="grid_p2" destination="F73-5f-YgP" id="drD-ap-D5z"/>
+                        <outlet property="label_p1" destination="Xde-fw-jA6" id="2AF-4V-Sk9"/>
+                        <outlet property="label_p2" destination="CwJ-8U-W6c" id="QI1-tj-FOB"/>
+                        <outlet property="largeship_p1" destination="xK4-gZ-Wvz" id="ZRy-4j-kPi"/>
+                        <outlet property="largeship_p2" destination="xum-jb-X85" id="azK-U0-DN3"/>
+                        <outlet property="mediumship_p1" destination="88C-IG-8hT" id="5UM-RL-SAp"/>
+                        <outlet property="mediumship_p2" destination="KYR-oE-qe7" id="QfR-Ae-OzB"/>
+                        <outlet property="p1_attack_p2" destination="MUT-Zr-kxM" id="rSQ-Jt-oBU"/>
+                        <outlet property="p2_attack_p1" destination="4B7-uw-WHd" id="LP9-I1-VGm"/>
+                        <outlet property="placeDoneButton" destination="kT2-Ts-3l7" id="ION-oT-47z"/>
+                        <outlet property="smallship2_p1" destination="BCs-zU-gOO" id="Ko7-if-YFy"/>
+                        <outlet property="smallship2_p2" destination="7Cm-4x-srt" id="XJ4-xd-nKk"/>
+                        <outlet property="smallship_p1" destination="7aK-u3-yy4" id="bZe-ek-1zD"/>
+                        <outlet property="smallship_p2" destination="z3Y-ox-uVF" id="Hrm-GF-VhO"/>
+                        <outlet property="switch_turn_button" destination="gZw-fW-sZY" id="9M9-wK-kSA"/>
+                        <outlet property="tinyship_p1" destination="2Lq-Vu-Tpz" id="5J4-Nz-eUK"/>
+                        <outlet property="tinyship_p2" destination="jKr-Fh-mRi" id="etY-ER-RyT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="njH-Du-Thz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733" y="-83.5"/>
+        </scene>
+        <!--Single Player-->
+        <scene sceneID="7cD-Mg-WnV">
+            <objects>
+                <viewController id="2Eg-fZ-3HL" customClass="SinglePlayer" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gV5-Kt-BEd"/>
+                        <viewControllerLayoutGuide type="bottom" id="40V-bc-MhG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rSI-DN-TKu">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVc-hS-mVP">
+                                <rect key="frame" x="16" y="20" width="100" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Quit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="YN1-BO-nAs"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluegrid.png" translatesAutoresizingMaskIntoConstraints="NO" id="90O-Lz-6V1">
+                                <rect key="frame" x="35" y="145" width="400" height="400"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWU-2l-jG4">
+                                <rect key="frame" x="745" y="226" width="160" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQs-hA-V6K">
+                                <rect key="frame" x="785" y="385" width="120" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluegrid.png" translatesAutoresizingMaskIntoConstraints="NO" id="lsJ-AU-r9d">
+                                <rect key="frame" x="505" y="145" width="400" height="400"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2N-8f-hl8">
+                                <rect key="frame" x="35" y="307" width="120" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSC-wl-gbz">
+                                <rect key="frame" x="35" y="226" width="160" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Human" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhd-qO-Jgs">
+                                <rect key="frame" x="29" y="97" width="406" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7M8-sL-F0Z">
+                                <rect key="frame" x="505" y="97" width="400" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGj-SX-MPa">
+                                <rect key="frame" x="36" y="563" width="869" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5c3-0Q-rmV">
+                                <rect key="frame" x="825" y="465" width="80" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRb-ge-ttU">
+                                <rect key="frame" x="35" y="145" width="200" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adH-aw-qpZ">
+                                <rect key="frame" x="705" y="145" width="200" height="40"/>
+                                <state key="normal" backgroundImage="ship.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhV-O4-IRx">
+                                <rect key="frame" x="36" y="385" width="120" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhw-Sz-Trk">
+                                <rect key="frame" x="785" y="307" width="120" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWY-d0-Gjr">
+                                <rect key="frame" x="36" y="718" width="147" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Placement Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="placementDone:" destination="2Eg-fZ-3HL" eventType="touchUpInside" id="VB5-pr-7I4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwG-lg-zIf">
+                                <rect key="frame" x="36" y="465" width="80" height="40"/>
+                                <state key="normal" backgroundImage="ship.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="left_missle.png" translatesAutoresizingMaskIntoConstraints="NO" id="u0P-A4-pml">
+                                <rect key="frame" x="436" y="235" width="68" height="63"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="right_missle.png" translatesAutoresizingMaskIntoConstraints="NO" id="kmg-00-c0s">
+                                <rect key="frame" x="436" y="373" width="68" height="63"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Double tap to rotate ships" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFQ-XH-ckB">
+                                <rect key="frame" x="36" y="602" width="870" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cD0-GD-zsc"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="AI_attack_human" destination="u0P-A4-pml" id="6BI-yA-plf"/>
+                        <outlet property="current_turn" destination="UGj-SX-MPa" id="RZA-Eb-jnI"/>
+                        <outlet property="game_info" destination="dFQ-XH-ckB" id="uiT-bJ-nLi"/>
+                        <outlet property="grid_p1" destination="90O-Lz-6V1" id="jR4-AC-9fQ"/>
+                        <outlet property="grid_p2" destination="lsJ-AU-r9d" id="ISf-6H-bvW"/>
+                        <outlet property="human_attack_AI" destination="kmg-00-c0s" id="aFl-Uh-pLT"/>
+                        <outlet property="label_p1" destination="dhd-qO-Jgs" id="ULC-1h-kYi"/>
+                        <outlet property="label_p2" destination="7M8-sL-F0Z" id="Z5R-I9-IN4"/>
+                        <outlet property="largeship_p1" destination="adH-aw-qpZ" id="r1g-qP-gYK"/>
+                        <outlet property="largeship_p2" destination="TRb-ge-ttU" id="TmD-rr-7CJ"/>
+                        <outlet property="mediumship_p1" destination="GWU-2l-jG4" id="wht-H3-FwB"/>
+                        <outlet property="mediumship_p2" destination="FSC-wl-gbz" id="Ar3-FD-VT9"/>
+                        <outlet property="placeDoneButton" destination="LWY-d0-Gjr" id="CKT-c7-tmv"/>
+                        <outlet property="smallship2_p1" destination="rQs-hA-V6K" id="quJ-4l-fXq"/>
+                        <outlet property="smallship2_p2" destination="DhV-O4-IRx" id="GWZ-AY-w9E"/>
+                        <outlet property="smallship_p1" destination="fhw-Sz-Trk" id="wT0-GE-gqe"/>
+                        <outlet property="smallship_p2" destination="O2N-8f-hl8" id="HnP-rz-g7G"/>
+                        <outlet property="tinyship_p1" destination="5c3-0Q-rmV" id="9Xi-rS-G18"/>
+                        <outlet property="tinyship_p2" destination="fwG-lg-zIf" id="UCA-hV-Xug"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9o-ch-riO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1000" y="806"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bluegrid.png" width="1000" height="1000"/>
+        <image name="left_missle.png" width="600" height="204"/>
+        <image name="no1.jpg" width="1920" height="1920"/>
+        <image name="no2.jpg" width="400" height="400"/>
+        <image name="no4_5.jpg" width="170" height="170"/>
+        <image name="right_missle.png" width="600" height="204"/>
+        <image name="ship.png" width="555" height="123"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="YN1-BO-nAs"/>
+    </inferredMetricsTieBreakers>
+</document>
